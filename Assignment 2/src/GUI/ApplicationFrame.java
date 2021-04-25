@@ -1317,15 +1317,20 @@ public class ApplicationFrame extends JFrame {
 	}
 	
 	public void setOrderedItems() throws SQLException {
+		int j = 1;
 		for(int i = 0 ;i<choosedItem.length;i++) {
 			if(choosedItem[i]) {
 				orderedItem = new OrderedItem();
-				orderedItem.setItemProduct(itemProductDatabase.getItemProduct(i+1));
+				while(itemProductDatabase.getItemProduct(j) == null) {
+					j++;
+				}
+				orderedItem.setItemProduct(itemProductDatabase.getItemProduct(j));
 				orderedItem.setQuantity(quantity[i]);
 				orderedItem.setSubTotalAmount(subPrice[i]);
 				orderedItems.add(orderedItem);
 				
 			}
+			j++;
 		}
 	}
 	
