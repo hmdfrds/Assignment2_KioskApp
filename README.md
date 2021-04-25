@@ -40,4 +40,5 @@ output from creditcardserver
 5.Receipt  
 ![alt text](https://github.com/hmdfrds/Assignment2_KioskApp/blob/master/receipt.png)  
 output inside receipt.txt file  
-https://www.youtube.com/watch?v=lE1RjUmGYQU
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/lE1RjUmGYQU/0.jpg)](https://www.youtube.com/watch?v=lE1RjUmGYQU)
