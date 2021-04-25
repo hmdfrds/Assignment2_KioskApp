@@ -36,13 +36,13 @@ public class ItemProductDatabase {
 			itemProduct.setItemProduct(id);
 			itemProduct.setName(rs.getString(2));
 			itemProduct.setPrice(rs.getFloat(3));
-			
+			rs.close();
+			ps.close();
+			return itemProduct;
 		}
-		
-		rs.close();
-		ps.close();
-		return itemProduct;
-	
-		
-	}
+		else {
+			rs.close();
+			ps.close();
+			return null;
+		}
 }
